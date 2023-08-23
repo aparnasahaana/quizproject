@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body onload = "loadFunction()">
+    <div class="heading">
+        <h1>Welcome to our quiz</h1>
+
+    </div>
+    <!--<div id="textname"><label><id="name"> Enter Name </id></label><input type ="text" id="name" required> </div>-->
+    <div id="structure" class="gridContainer">
+         <div id="qu" class="divQuestion">Question</div>
+  
+        <div id="divOption1" class="divOption1" onclick="selectOption(this)">Option1</div>
+  
+        <div id="divOption2" class="divOption2" onclick="selectOption(this)">Option2</div>
+  
+        <div id="divOption3" class="divOption3" onclick="selectOption(this)">option3</div>
+        <div id="divOption4" class="divOption4" onclick="selectOption(this)">option4</div>
+       <!---- <div class="back" onclick="selectOption(this)">Back</div>
+        <div id="next" class="next" onclick="selectOption(this)" >Next</div>-->
+        <div id="timer">00:00</div>
+        
+ 
+    </div>
+<button id="start" onclick="startButton(this)">START</button>
+    
+    <!--<p id="para">Quiz Ans</p>-->
+    <script src="scripts/scripts.js"></script>
+</body>
+</html>

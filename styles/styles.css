@@ -1,0 +1,200 @@
+.heading {
+  font-size: large;
+  width: 70 px;
+  height: 70 px;
+  background-color: transparent;
+  color: brown;
+  text-align: center;
+  margin: 50px;
+  align-self: center;
+  /* border: 1px solid hsl(348, 77%, 43%);*/
+  border-radius: 15px;
+  left: 500px;
+  display: block;
+}
+/*@media screen and (min-width: 480px) {
+    .class{width: 200px; float: left;}
+    #main {margin-left: 216px;}
+  }*/
+body {
+  background-color: lightblue;
+  /*background-image: url("https://i.pinimg.com/236x/6c/ca/62/6cca624eb3e034d6ab81b7b692fa6e7f.jpg");*/
+   background-image: url("../image-quiz/66315.jpg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  /*background-attachment: scroll;*/
+  text-align: center;
+}
+
+.divQuestion {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: lightskyblue;
+  border-radius: 20px;
+  padding:8px;
+  
+}
+.divOption1 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  background-color:  rgb(157, 82, 157);
+  border-radius: 20px;
+}
+.divOption2 {
+  background-color: rgb(157, 82, 157);
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 4;
+  grid-row-end: 6;
+  border-radius: 20px;
+}
+.divOption3 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  background-color: rgb(157, 82, 157);
+  border-radius: 20px;
+}
+.divOption4 {
+  background-color: rgb(157, 82, 157);
+  grid-column-start: 4;
+  grid-column-end: 6;
+  grid-row-start: 6;
+  grid-row-end: 8;
+  border-radius: 20px;
+}
+.back {
+ 
+  color: white;
+  font-size: large;
+  text-align: center;
+  text-shadow: #67823a;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 4;
+  grid-row-end: 5;
+}
+/*.next {*/
+  #timer {
+  background-color: #c4115f;
+  color: white;
+  font-size: large;
+  font-size: larger;
+  text-align: center;
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 4;
+  grid-row-end: 5;
+
+}
+
+.gridContainer {
+  /*display: grid;*/
+  display: none;
+  font-style: oblique;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-align: center;
+  margin-bottom: 10px;
+color: black;
+  background-color: transparent;
+  grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+  grid-template-rows: 30px 30px 30px 50px 50px 50px 50px 50px;
+  /*grid-template-rows: 30px 100px 100px 100px 100px 100px;*/
+  /*grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;*/
+  row-gap: 20px;
+  column-gap: 20px;
+  position: relative;
+  
+}
+button {
+  /*background-color: #a51a2a; 
+    border:gold;
+   color: rgb(540,78,500);
+    padding: 15px 15px;
+    text-align: center;
+    text-decoration:double;
+    display: inline-block;
+    font-size: 18px;
+border-radius:20px ;
+align-self: center;
+
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    */
+  background-color: transparent;
+  border-radius: 28px;
+  border-width: 50px;
+  border: 1px solid #67823a;
+  display: block;
+  cursor: pointer;
+  color: #c4115f;
+  font-family: Tahoma;
+  font-size: 16px;
+  text-decoration: none;
+  position: absolute;
+  bottom: 40%;
+  left: 45%;
+}
+button:hover {
+  background-color: #67823a;
+  color: white;
+}
+.divOption1:hover{
+  background-color: #67823a;
+  color: white;
+}
+.divOption2:hover{
+  background-color: #67823a;
+  color: white;
+}
+.divOption3:hover{
+  background-color: #67823a;
+  color: white;
+}
+.divOption4:hover{
+  background-color: #67823a;
+  color: white;
+}
+.next:hover{
+  background-color: #67823a;
+  color: white;
+}
+.back:hover{
+  background-color: #67823a;
+  color: white;
+}
+/*.divOption1:active{
+  background-color: #a82578;
+  color: white;
+}
+.divOption2:active{
+  background-color: #67823a;
+  color: white;
+}
+.divOption3:active{
+  background-color: #67823a;
+  color: white;
+}
+.divOption4:active{
+  background-color: #67823a;
+  color: white;
+}
+.gridContainer{
+  display: grid;
+  display: none;
+
+background-color: rgb(8, 83, 83);
+grid-template-columns: 1fr  1fr 1fr 1fr 1fr 1fr;
+/*grid-template-rows: 50px 50px 100px 100px 100px 100px;*/
+/*grid-template-rows: 30px 100px 100px 100px 100px 100px;*/
+/*grid-template-rows:50px 50px 50px 50px 50px 50px 50px 50px; 
+row-gap: 10px;
+column-gap: 1ch;
+}*/
